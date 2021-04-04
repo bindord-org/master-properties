@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hogarep-main-service
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+server:
+  port: 8080
