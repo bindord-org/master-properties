@@ -5,6 +5,6 @@ spring:
     active: dev
   data:
     mongodb:
-      uri: ${MONGODB_URI}
+      uri: ${SPRING_DATA_MONGODB_URI}
 server:
-  port: 8081
+  port: ${SERVER_PORT}

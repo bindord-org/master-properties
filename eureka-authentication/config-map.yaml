@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-eureka-authentication
+  labels:
+    service: eureka-authentication
+data:
+  application.yaml: |-
+    spring:
+      data:
+        mongodb:
+          uri: ${SPRING_DATA_MONGODB_URI}
+    server:
+      port: ${SERVER_PORT}
