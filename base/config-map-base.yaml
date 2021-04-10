@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: SVC_NAME
+  labels:
+    service: SVC_NAME
+    app: PRODUCT_NAME
+data:
+  application.yaml: |-
